@@ -3,8 +3,6 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialChars ="!@#$%^&*()";
 var numbers = "1234567890";
-var min=12;
-var max= 128;
 var password = "";
 
 var password = prompt("To generate a password, would you like to add characters:", "yes or no");
