@@ -1,5 +1,6 @@
 // Assignment code here
-var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialChars ="!@#$%^&*()";
 var numbers = "1234567890";
 var min=12;
