@@ -1,5 +1,5 @@
 // Assignment code here
-var chars = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialChars ="!@#$%^&*()";
 var numbers = "1234567890";
 var min=12;
