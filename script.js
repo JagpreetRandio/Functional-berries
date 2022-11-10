@@ -1,11 +1,11 @@
 // data needed to generate password 
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var specialChars ="!@#$%^&*()";
-var numbers = "1234567890";
-var password = "";
 
-var charactersAmount = prompt ("To generate a password, how many characters would you like to add?", "NOTE: must between 8 - 128 characters");
+var lowerCase =  ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var upperCase =  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var specialChars = ['!', '@', '#', '$', '%', '^', '&', '*' , '(', ')', '"' ]
+var numbers =  ['1', '2', '3', '4', '5' , '6', '7' , '8', '9', '0' ]
+
+
 
 var numbers = ("Would you like to add numbers?");
 
@@ -16,31 +16,17 @@ var upperChars = ("Would you like to add upper case characters?");
 var specialChars = ("Would you like to add special characters?");
 
 
-let generatePassword = function() {
-  // passInfo holds all of the password info
-  var passInfo = "";
-  // passChars holds characters that are chosen for the password
-  var passChars = [];
-  // first prompt. lets the user decide on how many characters they want for their password 
-  var charactersAmount = prompt ("To generate a password, how many characters would you like to add?", "NOTE: must between 8 - 128 characters");
-  // min number of characters is 8 and max number is 128 for the password
-  if (charactersAmount > 8 && charactersAmount < 128 ) {
-    // adding the confirm so you have the option to add numbes 
-   let numbers = confirm ("Would you like to add numbers?");
-    if (numbers){
-      passInfo = passInfo + makePassword.numbers;
-      passChars.push(getRandomChar(passwordOptions.num))
+function generatePassword(){
 
-    };
+  var charsAmount = (prompt("To generate a password, how many characters would you like to add?", "NOTE: must between 8 - 128 characters"));
+  while
+  (charsAmount <= 8 || confirmLength >= 128 ) {
+    alert("Password length must be between 8-50 characters Try again");
+    var charsAmount = (prompt("How many characters would you like your password to contain?"));
+    } 
 
-  }
+  
 }
- 
-const specialChars = confirm("Would you like to add special characters");
-if (specialChars) {
-  passInfo = passwordOptions.specialChars;
-  passChars.push(getRandomChar(passwordOptions.specialChars));
-};
 
 
 
