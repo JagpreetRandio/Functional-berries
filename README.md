@@ -1,4 +1,4 @@
-# Functional-berries
+# Password Generator
 
 Refactoring Password Generator Code 
 
